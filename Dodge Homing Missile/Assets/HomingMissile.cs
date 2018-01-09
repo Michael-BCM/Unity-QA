@@ -29,9 +29,9 @@ public class HomingMissile : MonoBehaviour
     private Transform target;
 
     /// <summary>
-    /// Returns true if the object should be looking at the target. 
+    /// Returns true if the object should be following the target this frame. 
     /// </summary>
-    private bool isLookingAtObject = true;
+    private bool isFollowingTarget = true;
 
     /// <summary>
     /// The tag of the target object.
@@ -43,7 +43,15 @@ public class HomingMissile : MonoBehaviour
     /// Error message.
     /// </summary>
     private string enterTagPls = "Please enter the tag of the object you'd like to target, in the field 'Target Tag' in the Inspector.";
-    
+
+    /// <summary>
+    /// Enable this if you want this object to face its target while moving toward it. 
+    /// </summary>
+    [SerializeField]    
+    private bool faceTarget;
+
+    private Vector3 tempVector;
+
     private void Start()
     {
         if(targetTag == "")
@@ -63,20 +71,46 @@ public class HomingMissile : MonoBehaviour
             return;
         }
 
+        if (Vector3.Distance(transform.position, target.position) < focusDistance)
+        {
+            isFollowingTarget = false;
+        }
+
         Vector3 targetDirection = target.position - transform.position;
 
-        Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, rotationSpeed * Time.deltaTime, 0.0F);
-
-        transform.Translate(Vector3.forward * Time.deltaTime * speed, Space.Self);
-
-        if(Vector3.Distance(transform.position, target.position) < focusDistance)
+        if (faceTarget)
         {
-            isLookingAtObject = false;
-        }
+            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, rotationSpeed * Time.deltaTime, 0.0F);
 
-        if(isLookingAtObject)
-        {
-            transform.rotation = Quaternion.LookRotation(newDirection);
+            MoveForward(Time.deltaTime);
+
+            if (isFollowingTarget)
+            {
+                transform.rotation = Quaternion.LookRotation(newDirection);
+            }
         }
+        else
+        {            
+            if (isFollowingTarget)
+            {
+                tempVector = targetDirection.normalized;
+
+                transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(tempVector * Time.deltaTime * speed, Space.World);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Moves forward at 'speed' multiplied by 'rate', per frame. 
+    /// Use Time.deltaTime as a parameter to travel forward at the same speed per second.
+    /// </summary>
+    /// <param name="rate"></param>
+    private void MoveForward (float rate)
+    {
+        transform.Translate(Vector3.forward * rate * speed, Space.Self);
     }
 }

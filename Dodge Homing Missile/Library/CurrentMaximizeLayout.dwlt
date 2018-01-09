@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 917, y: 492}
-  m_MaxSize: {x: 22012, y: 14042}
+  m_MinSize: {x: 915, y: 492}
+  m_MaxSize: {x: 22010, y: 14042}
   vertical: 0
-  controlID: 2311
+  controlID: 4426
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,10 +121,10 @@ MonoBehaviour:
     y: 0
     width: 856
     height: 987
-  m_MinSize: {x: 202, y: 321}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 202, y: 342}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 2312
+  controlID: 4336
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,14 +177,14 @@ MonoBehaviour:
     width: 854
     height: 692
   m_SceneLighting: 1
-  lastFramingTime: 1164.2371192245987
+  lastFramingTime: 2593.6316968857327
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 2.5387146, z: 0}
+    m_Target: {x: 0.42084616, y: -2.6594634, z: 177.925}
     speed: 2
-    m_Value: {x: 0, y: 2.5387146, z: 0}
+    m_Value: {x: 0.42084616, y: -2.6594634, z: 177.925}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -199,21 +199,21 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
+      m_Target: 0
       speed: 2
-      m_Value: 1
+      m_Value: 0
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.14960745, y: 0.23141466, z: -0.036040414, w: 0.96061397}
+    m_Target: {x: -0.0003115388, y: 0.999587, z: 0.011995619, w: 0.026393382}
     speed: 2
-    m_Value: {x: -0.14960746, y: -0.23141468, z: 0.036040418, w: -0.960614}
+    m_Value: {x: -0.00031153878, y: 0.999587, z: 0.011995618, w: 0.026393382}
   m_Size:
-    m_Target: 31.99059
+    m_Target: 10.761559
     speed: 2
-    m_Value: 31.99059
+    m_Value: 10.761559
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -242,8 +242,8 @@ MonoBehaviour:
     y: 713
     width: 856
     height: 274
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 492}
   m_MaxSize: {x: 14008, y: 14042}
   vertical: 1
-  controlID: 2289
+  controlID: 4427
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,8 +319,8 @@ MonoBehaviour:
     y: 0
     width: 700
     height: 423
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 271}
   m_MaxSize: {x: 14008, y: 10021}
   vertical: 0
-  controlID: 2290
+  controlID: 4392
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: F:\Media work\Unity3D Work\2017 Sort\Unity Answers\Dodge Homing
+  m_LastProjectPath: D:\Users\Michael\Documents\GitHub\Unity Test Projects\Dodge Homing
     Missile
   m_IsLocked: 0
   m_FolderTreeState:
@@ -451,8 +451,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 70260000
-    m_LastClickedID: 9840
+    m_SelectedIDs: cc91ffff
+    m_LastClickedID: 0
     m_ExpandedIDs: 0000000056260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -478,8 +478,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 70260000
-    m_LastClickedInstanceID: 9840
+    m_SelectedInstanceIDs: cc91ffff
+    m_LastClickedInstanceID: -28212
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -526,8 +526,8 @@ MonoBehaviour:
     y: 0
     width: 350
     height: 564
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -561,8 +561,8 @@ MonoBehaviour:
     height: 543
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 70260000
-    m_LastClickedID: 0
+    m_SelectedIDs: cc91ffff
+    m_LastClickedID: -28212
     m_ExpandedIDs: 18fcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -604,8 +604,8 @@ MonoBehaviour:
     y: 0
     width: 364
     height: 987
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}

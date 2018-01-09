@@ -143,3 +143,4 @@ MonoBehaviour:
   rotationSpeed: 1000
   focusDistance: 5
   targetTag: Player
+  faceTarget: 0
