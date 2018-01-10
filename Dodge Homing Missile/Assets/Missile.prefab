@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  rotationSpeed: 1000
+  rotationSpeed: 2
   focusDistance: 5
   targetTag: Player
-  faceTarget: 0
+  faceTarget: 1

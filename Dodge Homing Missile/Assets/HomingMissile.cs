@@ -6,16 +6,17 @@
 public class HomingMissile : MonoBehaviour
 {
     /// <summary>
-    /// The base movement speed of the missile, in units per second. 
+    /// The base movement speed of the missile, in units per frame. 
     /// </summary>
     [SerializeField]
     private float speed = 15;
 
     /// <summary>
-    /// The base rotation speed of the missile, in radians per second. 
+    /// The base rotation speed of the missile, in radians per frame. 
     /// </summary>
     [SerializeField]
-    private float rotationSpeed = 1000;
+    [Range(0, 2)]
+    private float rotationSpeed;
 
     /// <summary>
     /// The distance at which this object stops following its target and continues on its last known trajectory. 
